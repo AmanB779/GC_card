@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GC Institute - Invitation</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet" />
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="invitation-card">
+      <div class="card-header">
+        <div class="logo">
+          <i class="fas fa-graduation-cap"></i>
+          <h1>GC Institute</h1>
+        </div>
+        <div class="invitation-title">You're Invited to join New Batches!</div>
+      </div>
+      <div class="card-body">
+        <p class="invitation-text text-center">
+          Join us for an exciting new academic journey at GC Institute. We're launching new batches from
+          <span class="font-semibold">1st of April, 2025</span> for various courses and would be delighted to have you on board.
+        </p>
+        <div class="date-time">
+          <div>
+            <i class="far fa-calendar-alt"></i>
+            <span>April 1, 2025</span>
+          </div>
+          <div>
+            <i class="far fa-clock"></i>
+            <span>Flexible Timings</span>
+          </div>
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Online & Offline</span>
+          </div>
+        </div>
+        <div class="courses">
+          <h3 class="text-lg font-semibold mb-3">Courses Available:</h3>
+          <div class="course-item">
+            <i class="fas fa-book"></i>
+            <span>Class 10 - All Subjects</span>
+          </div>
+          <div class="course-item">
+            <i class="fas fa-calculator"></i>
+            <span>Class 12 - Science, Commerce and Arts</span>
+          </div>
+          <div class="course-item">
+            <i class="fas fa-laptop-code"></i>
+            <span>Class 11 & 12 - Computer Science, IP, Web Dev</span>
+          </div>
+        </div>
+        <a href="#" class="join-button" id="join-whatsapp"> Click Here to Join Now <i class="fab fa-whatsapp"></i> </a>
+      </div>
+      <div class="card-footer">
+        <div class="social-icons">
+          <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Form -->
+    <div class="popup-overlay" id="whatsapp-popup">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h3>Join GC Institute WhatsApp Group</h3>
+          <button class="popup-close">&times;</button>
+        </div>
+        <div class="popup-body">
+          <form id="whatsapp-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" class="form-control" required />
+            </div>
+            <!-- Email field removed as per new requirements -->
+            <div class="form-group">
+              <label for="mobile">Mobile Number</label>
+              <input type="tel" id="mobile" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="class">Class</label>
+              <select id="class" class="form-control" required>
+                <option value="">Select Class</option>
+                <option value="8">Junior Wing (1st to 8th)</option>
+                <option value="10">Senior Wing (9th & 10th)</option>
+                <option value="11-science">Class 11 (Science)</option>
+                <option value="11-commerce">Class 11 (Commerce)</option>
+                <option value="12-science">Class 12 (Science)</option>
+                <option value="12-commerce">Class 12 (Commerce)</option>
+                <option value="11-cs-ip">Class 11 (IP/CS)</option>
+                <option value="12-cs-ip">Class 12 (IP/CS)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Subjects</label>
+              <div class="subject-options">
+                <div class="subject-option">
+                  <input type="checkbox" id="maths" name="subjects" value="Mathematics" />
+                  <label for="maths">Mathematics</label>
+                </div>
+                <div class="subject-option">
+                  <input type="checkbox" id="science" name="subjects" value="Science" />
+                  <label for="science">Science</label>
+                </div>
+                <div class="subject-option">
+                  <input type="checkbox" id="english" name="subjects" value="English" />
+                  <label for="english">English</label>
+                </div>
+                <div class="subject-option">
+                  <input type="checkbox" id="social" name="subjects" value="Social Studies" />
+                  <label for="social">Social Studies</label>
+                </div>
+                <div class="subject-option">
+                  <input type="checkbox" id="computer" name="subjects" value="Computer" />
+                  <label for="computer">Computer</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="joining-date">Preferred Joining Date</label>
+              <input type="date" id="joining-date" class="form-control" min="2025-04-01" required />
+            </div>
+            <button type="submit" class="form-submit">Submit on WhatsApp <i class="fab fa-whatsapp"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Local JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
