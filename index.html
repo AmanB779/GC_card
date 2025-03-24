@@ -16,57 +16,140 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="invitation-card">
-      <div class="card-header">
-        <div class="logo">
-          <i class="fas fa-graduation-cap"></i>
-          <h1>GC Institute</h1>
-        </div>
-        <div class="invitation-title">You're Invited to join New Batches!</div>
-      </div>
-      <div class="card-body">
-        <p class="invitation-text text-center">
-          Join us for an exciting new academic journey at GC Institute. We're launching new batches from
-          <span class="font-semibold">1st of April, 2025</span> for various courses and would be delighted to have you on board.
-        </p>
-        <div class="date-time">
-          <div>
-            <i class="far fa-calendar-alt"></i>
-            <span>April 1, 2025</span>
+    <div class="theme-toggle">
+      <input type="checkbox" id="theme-switch" class="theme-switch" />
+      <label for="theme-switch" class="theme-switch-label">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+        <span class="toggle-ball"></span>
+      </label>
+    </div>
+
+    <div class="container">
+      <div class="invitation-card">
+        <div class="card-inner">
+          <!-- Front of card -->
+          <div class="card-front">
+            <div class="card-header">
+              <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <h1>GC Institute</h1>
+              </div>
+              <div class="invitation-title">You're Invited to join New Batches!</div>
+            </div>
+            <div class="card-body">
+              <p class="invitation-text text-center">
+                Join us for an exciting new academic journey at GC Institute. We're launching new batches from
+                <span class="font-semibold">1st of April, 2025</span> for various courses and would be delighted to have you on board.
+              </p>
+              <div class="date-time">
+                <div>
+                  <i class="far fa-calendar-alt"></i>
+                  <span>April 1, 2025</span>
+                </div>
+                <div>
+                  <i class="far fa-clock"></i>
+                  <span>Flexible Timings</span>
+                </div>
+                <div>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Online & Offline</span>
+                </div>
+              </div>
+              <div class="courses">
+                <h3 class="text-lg font-semibold mb-3">Courses Available:</h3>
+                <div class="course-item">
+                  <i class="fas fa-child"></i>
+                  <span>Junior Wing (1st to 8th) - All Subjects</span>
+                </div>
+                <div class="course-item">
+                  <i class="fas fa-book"></i>
+                  <span>Senior Wing (9th & 10th) - All Subjects</span>
+                </div>
+                <div class="course-item">
+                  <i class="fas fa-flask"></i>
+                  <span>Class 11 & 12 - Science, Commerce and Arts</span>
+                </div>
+                <div class="course-item">
+                  <i class="fas fa-laptop-code"></i>
+                  <span>Class 11 & 12 - Computer Science, IP, Web Dev</span>
+                </div>
+              </div>
+              <a href="#" class="join-button" id="join-whatsapp"> Register for Batch <i class="fab fa-whatsapp"></i> </a>
+              <div class="flip-info"><i class="fas fa-sync-alt"></i> Long press to meet our teachers</div>
+            </div>
+            <div class="card-footer">
+              <div class="social-icons">
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
           </div>
-          <div>
-            <i class="far fa-clock"></i>
-            <span>Flexible Timings</span>
+
+          <!-- Back of card (teachers) -->
+          <div class="card-back">
+            <div class="card-header">
+              <div class="logo">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h1>Our Faculty</h1>
+              </div>
+              <div class="invitation-title">Meet the Excellence</div>
+            </div>
+            <div class="card-body">
+              <div class="teachers-grid">
+                <div class="teacher-card">
+                  <div class="teacher-image">
+                    <img src="/api/placeholder/120/120" alt="Dr. Sharma" />
+                  </div>
+                  <h4>Dr. Rajiv Sharma</h4>
+                  <p>Science & Mathematics</p>
+                  <span>PhD, 15+ Years Experience</span>
+                </div>
+                <div class="teacher-card">
+                  <div class="teacher-image">
+                    <img src="/api/placeholder/120/120" alt="Prof. Gupta" />
+                  </div>
+                  <h4>Prof. Aarti Gupta</h4>
+                  <p>Commerce & Economics</p>
+                  <span>M.Com, MBA, 12+ Years</span>
+                </div>
+                <div class="teacher-card">
+                  <div class="teacher-image">
+                    <img src="/api/placeholder/120/120" alt="Mr. Kumar" />
+                  </div>
+                  <h4>Mr. Vijay Kumar</h4>
+                  <p>Computer Science & IT</p>
+                  <span>MSc CS, 10+ Years</span>
+                </div>
+                <div class="teacher-card">
+                  <div class="teacher-image">
+                    <img src="/api/placeholder/120/120" alt="Mrs. Saxena" />
+                  </div>
+                  <h4>Mrs. Priya Saxena</h4>
+                  <p>Languages & Literature</p>
+                  <span>MA English, 8+ Years</span>
+                </div>
+              </div>
+              <div class="institute-info">
+                <div class="institute-logo">
+                  <i class="fas fa-university"></i>
+                </div>
+                <div class="institute-details">
+                  <h3>GC Institute of Excellence</h3>
+                  <p>Empowering minds since 2010</p>
+                  <div class="institute-stats">
+                    <div><span>15+</span> Years</div>
+                    <div><span>5000+</span> Students</div>
+                    <div><span>98%</span> Success</div>
+                  </div>
+                </div>
+              </div>
+              <div class="flip-info"><i class="fas fa-sync-alt"></i> Tap to return</div>
+            </div>
           </div>
-          <div>
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Online & Offline</span>
-          </div>
-        </div>
-        <div class="courses">
-          <h3 class="text-lg font-semibold mb-3">Courses Available:</h3>
-          <div class="course-item">
-            <i class="fas fa-book"></i>
-            <span>Class 10 - All Subjects</span>
-          </div>
-          <div class="course-item">
-            <i class="fas fa-calculator"></i>
-            <span>Class 12 - Science, Commerce and Arts</span>
-          </div>
-          <div class="course-item">
-            <i class="fas fa-laptop-code"></i>
-            <span>Class 11 & 12 - Computer Science, IP, Web Dev</span>
-          </div>
-        </div>
-        <a href="#" class="join-button" id="join-whatsapp"> Click Here to Join Now <i class="fab fa-whatsapp"></i> </a>
-      </div>
-      <div class="card-footer">
-        <div class="social-icons">
-          <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
-          <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
         </div>
       </div>
     </div>
@@ -83,66 +166,49 @@
             <div class="form-group">
               <label for="name">Full Name</label>
               <input type="text" id="name" class="form-control" required />
+              <div class="error-message" id="name-error"></div>
             </div>
-            <!-- Email field removed as per new requirements -->
             <div class="form-group">
               <label for="mobile">Mobile Number</label>
               <input type="tel" id="mobile" class="form-control" required />
+              <div class="error-message" id="mobile-error"></div>
             </div>
             <div class="form-group">
               <label for="class">Class</label>
               <select id="class" class="form-control" required>
                 <option value="">Select Class</option>
-                <option value="8">Junior Wing (1st to 8th)</option>
-                <option value="10">Senior Wing (9th & 10th)</option>
-                <option value="11-arts">Class 11 (Arts)</option>
+                <option value="junior">Junior Wing (1st to 8th)</option>
+                <option value="senior">Senior Wing (9th & 10th)</option>
                 <option value="11-science">Class 11 (Science)</option>
                 <option value="11-commerce">Class 11 (Commerce)</option>
-                <option value="12-arts">Class 12 (Arts)</option>
                 <option value="12-science">Class 12 (Science)</option>
                 <option value="12-commerce">Class 12 (Commerce)</option>
                 <option value="11-cs-ip">Class 11 (IP/CS)</option>
                 <option value="12-cs-ip">Class 12 (IP/CS)</option>
               </select>
+              <div class="error-message" id="class-error"></div>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="subjects-container">
               <label>Subjects</label>
-              <div class="subject-options">
-                <div class="subject-option">
-                  <input type="checkbox" id="maths" name="subjects" value="Mathematics" />
-                  <label for="maths">Mathematics</label>
-                </div>
-                <div class="subject-option">
-                  <input type="checkbox" id="arts" name="subjects" value="Science" />
-                  <label for="science">Arts</label>
-                </div>
-                <div class="subject-option">
-                  <input type="checkbox" id="science" name="subjects" value="Science" />
-                  <label for="science">Science</label>
-                </div>
-                <div class="subject-option">
-                  <input type="checkbox" id="english" name="subjects" value="English" />
-                  <label for="english">English</label>
-                </div>
-                <div class="subject-option">
-                  <input type="checkbox" id="social" name="subjects" value="Social Studies" />
-                  <label for="social">Social Studies</label>
-                </div>
-                <div class="subject-option">
-                  <input type="checkbox" id="computer" name="subjects" value="Computer" />
-                  <label for="computer">Computer</label>
-                </div>
+              <div class="subject-options" id="subject-options">
+                <!-- Subject options will be inserted dynamically by JS -->
               </div>
+              <div class="error-message" id="subjects-error"></div>
             </div>
             <div class="form-group">
               <label for="joining-date">Preferred Joining Date</label>
               <input type="date" id="joining-date" class="form-control" min="2025-04-01" required />
+              <div class="error-message" id="date-error"></div>
             </div>
             <button type="submit" class="form-submit">Submit on WhatsApp <i class="fab fa-whatsapp"></i></button>
           </form>
         </div>
       </div>
     </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
     <!-- Local JavaScript -->
     <script src="script.js"></script>
   </body>
